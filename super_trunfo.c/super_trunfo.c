@@ -20,7 +20,8 @@ int main() {
     float pib2;
     int pontos_turisticos2;
 
-    // ---- Entrada da Carta 1 ----
+    //cadastro das informações da primeira carta
+
     printf("Cadastro da primeira carta:\n");
     printf("Digite o nome do estado:\n");
     fgets(estado1, sizeof(estado1), stdin);
@@ -48,7 +49,8 @@ int main() {
 
     getchar(); // Limpa o \n do buffer antes do próximo fgets
 
-    // ---- Entrada da Carta 2 ----
+    // cadastro das informações da segunda carta
+
     printf("\nCadastro da segunda carta:\n");
     printf("Digite o nome do estado:\n");
     fgets(estado2, sizeof(estado2), stdin);
@@ -74,7 +76,8 @@ int main() {
     printf("Digite o número de pontos turísticos:\n");
     scanf("%d", &pontos_turisticos2);
 
-    // ---- Exibição dos Dados ----
+    //Exibição dos dados da primeira carta
+
     printf("\n---- Dados da Primeira Carta ----\n");
     printf("Estado: %s\n", estado1);
     printf("Cidade: %s\n", cidade1);
@@ -83,6 +86,8 @@ int main() {
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f\n", pib1);
     printf("Número de pontos turísticos: %d\n", pontos_turisticos1);
+
+    // Exibição dos dados da segunda carta
 
     printf("\n---- Dados da Segunda Carta ----\n");
     printf("Estado: %s\n", estado2);
